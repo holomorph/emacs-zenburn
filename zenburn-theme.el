@@ -289,6 +289,9 @@ office, go ahead :)")
    `(message-header-to         ((,class (:foreground ,zenburn-number :weight bold))))
    `(message-header-xheader    ((,class (:foreground ,zenburn-debug :weight bold))))
 
+   `(org-date  ((,class (:foreground ,zenburn-number))))
+   `(org-table ((,class (:foreground ,zenburn-specialkey))))
+
    `(rst-adornment  ((,class (:foreground ,zenburn-title :background ,zenburn-normal-bg :weight bold))))
    `(rst-definition ((,class (:foreground ,zenburn-define :weight bold))))
    `(rst-level-1    ((,class (:foreground ,zenburn-title :weight bold))))
@@ -309,6 +312,9 @@ office, go ahead :)")
    `(sp-show-pair-mismatch-face ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
 
    `(tooltip ((,class (:foreground ,zenburn-delimiter :background "#080808"))))
+
+   `(whitespace-tab      ((,class (:foreground ,zenburn-specialkey :background ,zenburn-normal-bg))))
+   `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background ,zenburn-normal-bg))))
 
    `(widget-documentation ((,class (:foreground ,zenburn-macro :weight bold))))
    `(widget-field         ((,class (:foreground ,zenburn-isearch-bg :background ,zenburn-isearch-fg :weight normal))))
