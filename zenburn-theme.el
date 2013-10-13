@@ -121,8 +121,12 @@ office, go ahead :)")
    `(match               ((,class (:foreground ,zenburn-function :background ,zenburn-normal-bg :slant italic))))
    `(minibuffer-prompt   ((,class (:foreground ,zenburn-special))))
    `(mode-line           ((,class (:foreground ,zenburn-modeline-fg :background ,zenburn-modeline-bg :weight bold :box nil))))
-   `(mode-line-buffer-id ((,class (:foreground ,zenburn-identifier :background ,zenburn-modeline-bg))))
-   `(mode-line-inactive  ((,class (:foreground ,zenburn-modelinenc-fg :background ,zenburn-modelinenc-bg :weight normal :box nil))))
+   `(mode-line-buffer-id ((,class (:foreground ,zenburn-identifier :background nil))))
+   `(mode-line-inactive
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-modelinenc-fg :background ,zenburn-modelinenc-bg :weight normal :box nil))
+      (,class
+       (:foreground ,zenburn-modelinenc-fg :background "#262626" :weight normal :box nil))))
    `(region
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-visual-fg :background ,zenburn-visual-bg))
