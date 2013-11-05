@@ -166,6 +166,8 @@ office, go ahead :)")
 
    `(change-log-date ((,class (:foreground ,zenburn-number))))
 
+   `(comint-highlight-prompt ((,class (:foreground ,zenburn-debug :weight bold))))
+
    `(compilation-column-number  ((,class (:foreground ,zenburn-number :weight normal))))
    `(compilation-error          ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
    `(compilation-info           ((,class (:foreground ,zenburn-preproc :weight bold))))
@@ -245,6 +247,20 @@ office, go ahead :)")
    `(erc-prompt-face         ((,class (:foreground ,zenburn-number :background ,zenburn-normal-bg :weight normal))))
    `(erc-timestamp-face      ((,class (:foreground ,zenburn-nontext :weight normal))))
    `(erc-underline-face      ((,class (:underline t))))
+
+   `(eshell-ls-directory
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :weight bold))
+      (,class
+       (:foreground "#87afaf" :weight bold))))
+   `(eshell-ls-executable ((,class (:foreground "#cbecd0" :weight bold))))
+   `(eshell-ls-readonly   ((,class (:foreground ,zenburn-debug))))
+   `(eshell-ls-special    ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
+   `(eshell-ls-unreadable
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-exception))
+      (,class
+       (:foreground "#d7d7af"))))
 
    `(gnus-header-content        ((,class (:foreground ,zenburn-specialkey :slant italic))))
    `(gnus-header-from           ((,class (:foreground ,zenburn-preproc :weight bold))))
