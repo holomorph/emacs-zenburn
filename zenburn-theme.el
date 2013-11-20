@@ -113,7 +113,7 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))
       (,class
-       (:foreground "#eeeeee" :background ,zenburn-warning-bg :weight bold))))
+       (:foreground "color-231" :background ,zenburn-warning-bg :weight bold))))
    `(link                ((,class (:foreground ,zenburn-specialkey :background ,zenburn-wildmenu-bg :underline t :weight normal))))
    `(link-visited        ((,class (:foreground ,zenburn-wildmenu-fg :underline t :weight normal))))
    `(lazy-highlight      ((,class (:foreground ,zenburn-search-fg :background ,zenburn-search-bg))))
@@ -140,7 +140,7 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))
       (,class
-       (:foreground "#eeeeee" :background ,zenburn-warning-bg :weight bold))))
+       (:foreground "color-231" :background ,zenburn-warning-bg :weight bold))))
 
    `(font-lock-builtin-face              ((,class (:foreground ,zenburn-statement))))
    `(font-lock-comment-face              ((,class (:foreground ,zenburn-comment))))
@@ -160,7 +160,7 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))
       (,class
-       (:foreground "#eeeeee" :background ,zenburn-warning-bg :weight bold))))
+       (:foreground "color-231" :background ,zenburn-warning-bg :weight bold))))
 
    `(c-annotation-face ((,class (:foreground ,zenburn-constant :weight bold))))
 
