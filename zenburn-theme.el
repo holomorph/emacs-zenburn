@@ -173,6 +173,7 @@ office, go ahead :)")
    `(compilation-info           ((,class (:foreground ,zenburn-preproc :weight bold))))
    `(compilation-line-number    ((,class (:foreground ,zenburn-number :weight normal))))
    `(compilation-mode-line-exit ((,class (:foreground ,zenburn-specialkey :weight bold))))
+   `(compilation-mode-line-fail ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
    `(compilation-mode-line-run  ((,class (:foreground ,zenburn-keyword :weight bold))))
 
    `(completions-annotations      ((,class (:foreground ,zenburn-comment))))
