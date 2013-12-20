@@ -202,9 +202,9 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffadd-fg :background ,zenburn-diffadd-bg :weight bold))
       (,class
-       (:foreground "#5f8787" :background "#3a3a3a" :weight bold))))
-   `(diff-file-header    ((t (:foreground ,zenburn-type :weight bold))))
-   `(diff-header         ((t (:foreground ,zenburn-define :weight bold))))
+       (:foreground "#5f8787" :background "#303030" :weight bold))))
+   `(diff-file-header    ((t (:foreground ,zenburn-type :background nil :weight bold))))
+   `(diff-header         ((t (:foreground ,zenburn-define :background nil :weight bold))))
    `(diff-removed
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffempty-fg :background ,zenburn-diffempty-bg :weight bold))
@@ -297,6 +297,14 @@ office, go ahead :)")
    `(info-title-4     ((,class (:foreground ,zenburn-title :weight bold))))
 
    `(linum ((,class (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))))
+
+   `(magit-log-head-label-bisect-bad    ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
+   `(magit-log-head-label-bisect-good   ((,class (:foreground ,zenburn-specialkey :background nil :weight bold))))
+   `(magit-log-head-label-bisect-skip   ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
+   `(magit-log-head-label-head          ((,class (:foreground ,zenburn-specialkey :background nil :weight bold))))
+   `(magit-log-head-label-local         ((,class (:foreground ,zenburn-number :background nil :weight bold))))
+   `(magit-log-head-label-remote        ((,class (:foreground ,zenburn-visualnos-bg :background nil :weight bold))))
+   `(magit-log-head-label-tags          ((,class (:foreground ,zenburn-function :background nil :weight bold))))
 
    `(makefile-space ((,class (:background ,zenburn-error-bg))))
 
