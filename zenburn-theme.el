@@ -226,7 +226,32 @@ office, go ahead :)")
        (:foreground ,zenburn-directory :weight bold))
       (,class
        (:foreground "#87afaf" :weight bold))))
-   `(dired-symlink ((,class (:foreground ,zenburn-number :weight bold))))
+   `(dired-symlink ((,class (:foreground ,zenburn-function))))
+
+   `(ediff-current-diff-A
+     ((((class color) (min-colors 4096))
+       (:background ,zenburn-diffchange-bg))
+      (,class
+       (:background "#303030"))))
+   `(ediff-current-diff-B ((,class (:inherit ediff-current-diff-A))))
+   `(ediff-even-diff-A
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-diffempty-fg :background ,zenburn-diffempty-bg :weight bold))
+      (,class
+       (:foreground "#1c1c1c" :background "#3a3a3a" :weight bold))))
+   `(ediff-even-diff-B
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-diffadd-fg :background ,zenburn-diffadd-bg :weight bold))
+      (,class
+       (:foreground "#5f8787" :background "#303030" :weight bold))))
+   `(ediff-fine-diff-A
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
+      (,class
+       (:foreground "#ffafaf" :background "#3a3a3a" :weight bold))))
+   `(ediff-fine-diff-B ((,class (:inherit ediff-fine-diff-A))))
+   `(ediff-odd-diff-A  ((,class (:inherit ediff-even-diff-A))))
+   `(ediff-odd-diff-B  ((,class (:inherit ediff-even-diff-B))))
 
    `(erc-action-face         ((,class (:foreground ,zenburn-function :weight normal))))
    `(erc-bold-face           ((,class (:weight bold))))
@@ -257,6 +282,7 @@ office, go ahead :)")
    `(eshell-ls-executable ((,class (:foreground "#cbecd0" :weight bold))))
    `(eshell-ls-readonly   ((,class (:foreground ,zenburn-debug))))
    `(eshell-ls-special    ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
+   `(eshell-ls-symlink    ((,class (:foreground ,zenburn-function))))
    `(eshell-ls-unreadable
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-exception))
