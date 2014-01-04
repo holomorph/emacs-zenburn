@@ -292,6 +292,7 @@ office, go ahead :)")
    `(gnus-header-content        ((,class (:foreground ,zenburn-specialkey))))
    `(gnus-header-from           ((,class (:foreground ,zenburn-string :weight normal))))
    `(gnus-header-name           ((,class (:foreground ,zenburn-preproc :weight bold))))
+   `(gnus-header-newsgroups     ((,class (:foreground ,zenburn-function))))
    `(gnus-header-subject        ((,class (:foreground ,zenburn-title :weight bold))))
    `(gnus-server-offline        ((,class (:foreground ,zenburn-nontext :weight bold))))
    `(gnus-server-opened         ((,class (:foreground ,zenburn-specialkey :weight bold))))
@@ -345,6 +346,11 @@ office, go ahead :)")
    `(message-header-xheader    ((,class (:foreground ,zenburn-debug :weight bold))))
    `(message-separator         ((,class (:foreground ,zenburn-nontext))))
 
+   `(mu4e-header-highlight-face          ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
+   `(mu4e-view-contact-face              ((,class (:foreground ,zenburn-string :weight normal))))
+   `(mu4e-view-header-value-face         ((,class (:foreground ,zenburn-specialkey))))
+   `(mu4e-view-special-header-value-face ((,class (:foreground ,zenburn-function))))
+
    `(org-date  ((,class (:foreground ,zenburn-number))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
 
@@ -366,6 +372,18 @@ office, go ahead :)")
 
    `(sp-show-pair-match-face    ((,class (:foreground ,zenburn-match-paren-fg :background ,zenburn-match-paren-bg :weight bold))))
    `(sp-show-pair-mismatch-face ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
+
+   `(speedbar-button-face    ((,class (:foreground ,zenburn-function))))
+   `(speedbar-directory-face
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :weight bold))
+      (,class
+       (:foreground "#87afaf" :weight bold))))
+   `(speedbar-file-face      ((,class (:foreground ,zenburn-normal-fg))))
+   `(speedbar-highlight-face ((,class (:inherit highlight))))
+   `(speedbar-selected-face  ((,class (:inherit secondary-selection))))
+   `(speedbar-separator-face ((,class (:foreground ,zenburn-title :background ,zenburn-linum-bg :weight bold))))
+   `(speedbar-tag-face       ((,class (:foreground ,zenburn-tag :weight bold))))
 
    `(tooltip ((,class (:foreground ,zenburn-delimiter :background "#080808"))))
 
