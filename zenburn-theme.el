@@ -1,6 +1,33 @@
-;; Emacs color file
-;; URL:          http://slinky.imukuppi.org/zenburnpage/
-;; License:      GNU GPL <http://www.gnu.org/licenses/gpl.html>
+;;; zenburn-theme.el --- Zenburn theme for faces
+
+;; Copyright © 2013-2014 Mark Oteiza
+
+;; Author:      Mark Oteiza
+;; Created:     14 August 2013
+;; Keywords:    color themes
+
+;; This file is not part of GNU Emacs.
+
+;; This file is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published
+;; by the Free Software Foundation, either version 3 of the License,
+;; or (at your option) any later version.
+
+;; This file is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This is a port of the high contrast variant of `zenburn', the color
+;; scheme for Vim written by Jani Nurminen.  Its home page is
+;; <http://slinky.imukuppi.org/zenburnpage/>.
+
+;;; Code:
 
 (deftheme zenburn
   "Nothing too fancy, just some alien fruit salad to keep you in the zone.
@@ -132,7 +159,11 @@ office, go ahead :)")
        (:foreground ,zenburn-visual-fg :background ,zenburn-visual-bg))
       (,class
        (:foreground "#080808" :background ,zenburn-visual-bg))))
-   `(secondary-selection ((,class (:foreground ,zenburn-visualnos-fg :background ,zenburn-visualnos-bg))))
+   `(secondary-selection
+     ((((class color) (min-colors 4096))
+       (:background "#0f0f0f"))
+      (,class
+       (:background "#080808"))))
    `(shadow              ((,class (:foreground ,zenburn-nontext))))
    `(success             ((,class (:foreground ,zenburn-specialkey :weight bold))))
    `(vertical-border     ((,class (:foreground ,zenburn-modelinenc-fg :background ,zenburn-modeline-bg :weight normal))))
@@ -354,13 +385,17 @@ office, go ahead :)")
    `(message-header-subject    ((,class (:foreground ,zenburn-title :weight bold))))
    `(message-header-to         ((,class (:foreground ,zenburn-specialkey))))
    `(message-header-xheader    ((,class (:foreground ,zenburn-debug :weight bold))))
+   `(message-mml               ((,class (:foreground ,zenburn-function))))
    `(message-separator         ((,class (:foreground ,zenburn-nontext))))
+
+   `(mm-uu-extract ((,class (:background ,zenburn-hl-line))))
 
    `(mu4e-header-highlight-face          ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
    `(mu4e-view-contact-face              ((,class (:foreground ,zenburn-string :weight normal))))
    `(mu4e-view-header-value-face         ((,class (:foreground ,zenburn-specialkey))))
    `(mu4e-view-special-header-value-face ((,class (:foreground ,zenburn-function))))
 
+   `(org-code  ((,class (:foreground ,zenburn-keyword :weight bold))))
    `(org-date  ((,class (:foreground ,zenburn-number))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
 
@@ -434,3 +469,5 @@ office, go ahead :)")
   )
 
 (provide-theme 'zenburn)
+
+;;; zenburn-theme.el ends here
