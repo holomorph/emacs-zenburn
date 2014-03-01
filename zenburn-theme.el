@@ -134,7 +134,7 @@ office, go ahead :)")
        (:foreground "#d75f5f" :background "#303030" :weight bold))))
    `(fringe      ((,class (:foreground "#606060" :background ,zenburn-modelinenc-bg))))
    `(highlight   ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
-   `(header-line ((,class (:foreground ,zenburn-title :weight bold :underline nil))))
+   `(header-line ((,class (:foreground ,zenburn-title :background nil :weight bold :underline nil :inherit nil))))
    `(isearch     ((,class (:foreground ,zenburn-isearch-fg :background ,zenburn-isearch-bg))))
    `(isearch-fail
      ((((class color) (min-colors 4096))
@@ -154,6 +154,7 @@ office, go ahead :)")
        (:foreground ,zenburn-modelinenc-fg :background ,zenburn-modelinenc-bg :weight normal :box nil))
       (,class
        (:foreground ,zenburn-modelinenc-fg :background "#262626" :weight normal :box nil))))
+   `(next-error          ((,class (:inherit highlight))))
    `(region
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-visual-fg :background ,zenburn-visual-bg))
@@ -342,9 +343,9 @@ office, go ahead :)")
    `(gnus-summary-normal-read   ((,class (:foreground ,zenburn-normal-fg))))
    `(gnus-summary-normal-ticked ((,class (:foreground ,zenburn-error-fg))))
    `(gnus-summary-normal-unread ((,class (:foreground ,zenburn-title :weight bold))))
-   `(gnus-summary-selected      ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
+   `(gnus-summary-selected      ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg :underline nil))))
 
-   `(hl-line ((,class (:background ,zenburn-hl-line))))
+   `(hl-line ((,class (:background ,zenburn-hl-line :inherit nil))))
 
    `(ido-first-match ((,class (:foreground ,zenburn-function :weight normal))))
    `(ido-only-match  ((,class (:foreground ,zenburn-specialkey))))
@@ -356,9 +357,9 @@ office, go ahead :)")
 
    `(info-menu-header
      ((((class color) (min-colors 4096))
-       (:foreground ,zenburn-directory :weight bold))
+       (:foreground ,zenburn-directory :weight bold :underline nil :inherit nil))
       (,class
-       (:foreground "#87afaf" :weight bold))))
+       (:foreground "#87afaf" :weight bold :underline nil :inherit nil))))
    `(info-menu-star   ((,class (:foreground ,zenburn-normal-fg))))
    `(info-title-1     ((,class (:foreground ,zenburn-title :weight bold))))
    `(info-title-2     ((,class (:foreground ,zenburn-title :weight bold))))
