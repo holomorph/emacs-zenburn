@@ -330,6 +330,9 @@ office, go ahead :)")
       (,class
        (:foreground "#d7d7af"))))
 
+   `(flycheck-error   ((,class (:inherit error))))
+   `(flycheck-warning ((,class (:inherit warning))))
+
    `(gnus-header-content        ((,class (:foreground ,zenburn-specialkey))))
    `(gnus-header-from           ((,class (:foreground ,zenburn-string :weight normal))))
    `(gnus-header-name           ((,class (:foreground ,zenburn-preproc :weight bold))))
@@ -465,6 +468,8 @@ office, go ahead :)")
    `(wl-highlight-summary-thread-top-face            ((,class (:foreground ,zenburn-normal-fg))))
    `(wl-highlight-summary-unread-face                ((,class (:foreground ,zenburn-title :weight bold))))
    `(wl-message-header-narrowing-face                ((,class (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))))
+
+   `(yas-field-highlight-face ((,class (:inherit highlight))))
 
   )
   )
