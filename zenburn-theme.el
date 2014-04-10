@@ -256,7 +256,11 @@ office, go ahead :)")
        (:foreground ,zenburn-directory :weight bold))
       (,class
        (:foreground "#87afaf" :weight bold))))
-   `(dired-symlink ((,class (:foreground ,zenburn-function))))
+   `(dired-symlink
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-question :weight bold))
+      (,class
+       (:foreground "color-231" :weight bold))))
 
    `(ediff-current-diff-A
      ((((class color) (min-colors 4096))
@@ -323,7 +327,11 @@ office, go ahead :)")
    `(eshell-ls-executable ((,class (:foreground "#cbecd0" :weight bold))))
    `(eshell-ls-readonly   ((,class (:foreground ,zenburn-debug))))
    `(eshell-ls-special    ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
-   `(eshell-ls-symlink    ((,class (:foreground ,zenburn-function))))
+   `(eshell-ls-symlink
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-question :weight bold))
+      (,class
+       (:foreground "color-231" :weight bold))))
    `(eshell-ls-unreadable
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-exception))
