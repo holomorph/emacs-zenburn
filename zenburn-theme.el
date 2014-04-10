@@ -389,6 +389,13 @@ office, go ahead :)")
 
    `(makefile-space ((,class (:background ,zenburn-error-bg))))
 
+   `(markdown-bold-face             ((,class (:inherit nil :weight bold))))
+   `(markdown-header-delimiter-face ((,class (:inherit markdown-header-face))))
+   `(markdown-header-face           ((,class (:foreground ,zenburn-title :weight bold))))
+   `(markdown-header-rule-face      ((,class (:inherit markdown-header-face))))
+   `(markdown-italic-face           ((,class (:inherit nil :slant italic))))
+   `(markdown-url-face              ((,class (:inherit link))))
+
    `(message-cited-text        ((,class (:foreground ,zenburn-comment))))
    `(message-header-cc         ((,class (:foreground ,zenburn-specialkey))))
    `(message-header-name       ((,class (:foreground ,zenburn-preproc :weight bold :underline nil))))
