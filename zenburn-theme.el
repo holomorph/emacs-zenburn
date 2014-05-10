@@ -200,6 +200,16 @@ office, go ahead :)")
 
    `(comint-highlight-prompt ((,class (:foreground ,zenburn-debug :weight bold))))
 
+   `(company-preview ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
+   `(company-preview-common ((,class (:foreground ,zenburn-normal-bg))))
+   `(company-tooltip ((,class (:foreground ,zenburn-pmenu-fg :background "#121212"))))
+   `(company-tooltip-annotation ((,class (:foreground ,zenburn-specialkey))))
+   `(company-tooltip-common ((,class (:foreground ,zenburn-pmenusel-fg :weight bold))))
+   `(company-tooltip-common-selection ((,class (:foreground ,zenburn-wildmenu-fg :weight bold))))
+   `(company-tooltip-selection ((,class (:background ,zenburn-pmenu-bg))))
+   `(company-scrollbar-bg ((,class (:background ,zenburn-wildmenu-bg))))
+   `(company-scrollbar-fg ((,class (:background ,zenburn-wildmenu-fg))))
+
    `(compilation-column-number  ((,class (:foreground ,zenburn-number :weight normal))))
    `(compilation-error          ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
    `(compilation-line-number    ((,class (:foreground ,zenburn-number :weight normal))))
