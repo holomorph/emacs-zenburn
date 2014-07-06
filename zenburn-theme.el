@@ -423,8 +423,9 @@ office, go ahead :)")
    `(mu4e-view-header-value-face         ((,class (:foreground ,zenburn-specialkey))))
    `(mu4e-view-special-header-value-face ((,class (:foreground ,zenburn-function))))
 
-   `(org-code  ((,class (:foreground ,zenburn-keyword :weight bold))))
-   `(org-date  ((,class (:foreground ,zenburn-number))))
+   `(org-code ((,class (:foreground ,zenburn-keyword :weight bold))))
+   `(org-date ((,class (:foreground ,zenburn-number))))
+   `(org-formula ((,class (:foreground ,zenburn-function))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
 
    `(rst-adornment  ((,class (:foreground ,zenburn-title :background ,zenburn-normal-bg :weight bold))))
