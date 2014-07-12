@@ -387,6 +387,12 @@ office, go ahead :)")
    `(info-title-3 ((,class (:foreground ,zenburn-title :weight bold))))
    `(info-title-4 ((,class (:foreground ,zenburn-title :weight bold))))
 
+   `(ledger-font-comment-face ((,class (:foreground nil :inherit font-lock-comment-face))))
+   `(ledger-font-other-face ((,class (:foreground ,zenburn-function :weight normal))))
+   `(ledger-font-payee-uncleared-face ((,class (:foreground ,zenburn-constant :weight bold))))
+   `(ledger-font-posting-account-face ((,class (:foreground ,zenburn-preproc :weight bold))))
+   `(ledger-font-posting-amount-face ((,class (:foreground ,zenburn-number))))
+
    `(linum ((,class (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))))
 
    `(magit-log-head-label-bisect-bad ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
