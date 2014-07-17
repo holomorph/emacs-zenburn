@@ -239,6 +239,13 @@ office, go ahead :)")
    `(custom-state ((,class (:foreground ,zenburn-macro :weight bold))))
    `(custom-variable-tag ((,class (:foreground ,zenburn-title :weight bold))))
 
+   `(dictionary-reference-face ((,class (:foreground nil :inherit link))))
+   `(dictionary-word-entry-face
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :weight bold))
+      (,class
+       (:foreground "#87afaf" :weight bold))))
+
    `(diff-added
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffadd-fg :background ,zenburn-diffadd-bg :weight bold))
