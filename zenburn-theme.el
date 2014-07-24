@@ -285,7 +285,7 @@ office, go ahead :)")
        (:background ,zenburn-diffchange-bg))
       (,class
        (:background "#303030"))))
-   `(ediff-current-diff-B ((,class (:inherit ediff-current-diff-A))))
+   `(ediff-current-diff-B ((,class (:background unspecified :inherit ediff-current-diff-A))))
    `(ediff-even-diff-A
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffempty-fg :background ,zenburn-diffempty-bg :weight bold))
@@ -301,9 +301,9 @@ office, go ahead :)")
        (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
       (,class
        (:foreground "#ffafaf" :background "#3a3a3a" :weight bold))))
-   `(ediff-fine-diff-B ((,class (:inherit ediff-fine-diff-A))))
-   `(ediff-odd-diff-A ((,class (:inherit ediff-even-diff-A))))
-   `(ediff-odd-diff-B ((,class (:inherit ediff-even-diff-B))))
+   `(ediff-fine-diff-B ((,class (:background unspecified :inherit ediff-fine-diff-A))))
+   `(ediff-odd-diff-A ((,class (:foreground unspecified :background unspecified :inherit ediff-even-diff-A))))
+   `(ediff-odd-diff-B ((,class (:foreground unspecified :background unspecified :inherit ediff-even-diff-B))))
 
    `(emms-browser-album-face
         ((((class color) (min-colors 4096))
