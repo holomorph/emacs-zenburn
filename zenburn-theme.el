@@ -486,6 +486,23 @@ office, go ahead :)")
    `(widget-documentation ((,class (:foreground ,zenburn-string))))
    `(widget-field ((,class (:foreground ,zenburn-isearch-bg :background ,zenburn-isearch-fg :weight normal))))
 
+   `(w3m-anchor ((,class (:foreground nil :inherit link))))
+   `(w3m-arrived-anchor ((,class (:foreground nil :inherit link-visited))))
+   `(w3m-current-anchor ((,class (:inverse-video t :weight unspecified))))
+   `(w3m-form ((,class (:foreground nil :inherit widget-field :underline nil))))
+   `(w3m-italic ((,class (:underline nil :inherit italic))))
+   `(w3m-header-line-location-title
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :background nil :weight bold))
+      (,class
+       (:foreground "#87afaf" :background nil :weight bold))))
+   `(w3m-tab-background ((,class (:foreground unspecified :background unspecified))))
+   `(w3m-tab-selected ((,class (:foreground nil :background nil :inherit warning))))
+   `(w3m-tab-selected-retrieving ((,class (:foreground ,zenburn-directory :background ,zenburn-warning-bg))))
+   `(w3m-tab-unselected ((,class (:foreground ,zenburn-title :background nil))))
+   `(w3m-tab-unselected-retrieving ((,class (:foreground ,zenburn-directory :background nil))))
+   `(w3m-tab-unselected-unseen ((,class (:foreground nil :background nil :inherit highlight))))
+
    `(wl-highlight-demo-face ((,class (:foreground ,zenburn-normal-fg))))
    `(wl-highlight-folder-unknown-face ((,class (:foreground ,zenburn-errormsg :weight bold))))
    `(wl-highlight-folder-unread-face ((,class (:foreground ,zenburn-title :weight bold))))
