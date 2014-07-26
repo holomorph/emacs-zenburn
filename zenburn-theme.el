@@ -201,7 +201,7 @@ office, go ahead :)")
    `(comint-highlight-prompt ((,class (:foreground ,zenburn-debug :weight bold))))
 
    `(company-preview ((,class (:foreground nil :background nil :inherit highlight))))
-   `(company-preview-common ((,class (:foreground ,zenburn-normal-bg))))
+   `(company-preview-common ((,class (:foreground unspecified :inherit company-preview))))
    `(company-template-field ((,class (:foreground nil :background nil :inherit highlight))))
    `(company-tooltip ((,class (:foreground ,zenburn-pmenu-fg :background "#121212"))))
    `(company-tooltip-annotation ((,class (:foreground ,zenburn-specialkey))))
