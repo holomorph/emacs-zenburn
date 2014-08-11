@@ -344,6 +344,7 @@ office, go ahead :)")
       (,class
        (:foreground "#87afaf" :weight bold))))
    `(eshell-ls-executable ((,class (:foreground "#cbecd0" :weight bold))))
+   `(eshell-ls-product ((,class (:foreground ,zenburn-nontext))))
    `(eshell-ls-readonly ((,class (:foreground ,zenburn-debug))))
    `(eshell-ls-special ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
    `(eshell-ls-symlink
