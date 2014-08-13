@@ -377,6 +377,8 @@ office, go ahead :)")
 
    `(hl-line ((,class (:background ,zenburn-hl-line :inherit nil))))
 
+   `(holiday ((,class (:background ,zenburn-number :foreground ,zenburn-hl-line))))
+
    `(ido-first-match ((,class (:foreground ,zenburn-function :weight normal))))
    `(ido-only-match ((,class (:foreground ,zenburn-specialkey))))
    `(ido-subdir
