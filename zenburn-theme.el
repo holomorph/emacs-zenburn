@@ -406,13 +406,6 @@ office, go ahead :)")
 
    `(linum ((,class (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))))
 
-   `(magit-log-head-label-bisect-bad ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
-   `(magit-log-head-label-bisect-good ((,class (:foreground ,zenburn-specialkey :background nil :weight bold))))
-   `(magit-log-head-label-bisect-skip ((,class (:foreground ,zenburn-function :background ,zenburn-wildmenu-bg :weight bold))))
-   `(magit-log-head-label-head ((,class (:foreground ,zenburn-specialkey :background nil :weight bold))))
-   `(magit-log-head-label-local ((,class (:foreground ,zenburn-number :background nil :weight bold))))
-   `(magit-log-head-label-remote ((,class (:foreground ,zenburn-visualnos-bg :background nil :weight bold))))
-   `(magit-log-head-label-tags ((,class (:foreground ,zenburn-function :background nil :weight bold))))
 
    `(makefile-space ((,class (:background ,zenburn-error-bg))))
 
