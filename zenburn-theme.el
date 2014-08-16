@@ -260,9 +260,9 @@ office, go ahead :)")
        (:foreground "#1c1c1c" :background "#3a3a3a" :weight bold))))
    `(diff-refine-added
      ((((class color) (min-colors 4096))
-       (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
+       (:foreground "#bef7be" :background "#414f47" :weight bold))
       (,class
-       (:foreground "#ffafaf" :background "#3a3a3a" :weight bold))))
+       (:foreground "#afffd7" :background "#4e4e4e" :weight bold))))
    `(diff-refine-removed
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
