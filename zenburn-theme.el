@@ -251,6 +251,7 @@ office, go ahead :)")
        (:foreground ,zenburn-diffadd-fg :background ,zenburn-diffadd-bg :weight bold))
       (,class
        (:foreground "#5f8787" :background "#303030" :weight bold))))
+   `(diff-context ((,class (:foreground unspecified :inherit shadow))))
    `(diff-file-header ((t (:foreground ,zenburn-type :background nil :weight bold))))
    `(diff-header ((t (:foreground ,zenburn-define :background nil :weight bold))))
    `(diff-removed
