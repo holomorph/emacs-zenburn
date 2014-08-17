@@ -406,6 +406,13 @@ office, go ahead :)")
 
    `(linum ((,class (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))))
 
+   `(magit-diff-context ((,class (:foreground unspecified :inherit diff-context))))
+   `(magit-diffstat-added ((,class (:foreground "#bef7be" :weight bold))))
+   `(magit-diffstat-removed ((,class (:foreground ,zenburn-difftext-fg :weight bold))))
+   `(magit-hunk-heading ((,class (:foreground ,zenburn-define :background nil :weight bold))))
+   `(magit-section-heading ((,class (:foreground ,zenburn-title :background unspecified :weight bold))))
+   `(magit-diff-added ((,class (:foreground unspecified :background unspecified :inherit diff-added))))
+   `(magit-diff-removed ((,class (:foreground unspecified :background unspecified :inherit diff-removed))))
 
    `(makefile-space ((,class (:background ,zenburn-error-bg))))
 
