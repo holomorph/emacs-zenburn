@@ -283,28 +283,28 @@ office, go ahead :)")
 
    `(ediff-current-diff-A
      ((((class color) (min-colors 4096))
-       (:background ,zenburn-diffchange-bg))
-      (,class
-       (:background "#303030"))))
-   `(ediff-current-diff-B ((,class (:background unspecified :inherit ediff-current-diff-A))))
-   `(ediff-even-diff-A
-     ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffempty-fg :background ,zenburn-diffempty-bg :weight bold))
       (,class
        (:foreground "#1c1c1c" :background "#3a3a3a" :weight bold))))
-   `(ediff-even-diff-B
+   `(ediff-current-diff-B
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-diffadd-fg :background ,zenburn-diffadd-bg :weight bold))
       (,class
        (:foreground "#5f8787" :background "#303030" :weight bold))))
+   `(ediff-even-diff-A ((,class (:background "#262626"))))
+   `(ediff-even-diff-B ((,class (:background "#262626"))))
    `(ediff-fine-diff-A
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
       (,class
        (:foreground "#ffafaf" :background "#3a3a3a" :weight bold))))
-   `(ediff-fine-diff-B ((,class (:background unspecified :inherit ediff-fine-diff-A))))
-   `(ediff-odd-diff-A ((,class (:foreground unspecified :background unspecified :inherit ediff-even-diff-A))))
-   `(ediff-odd-diff-B ((,class (:foreground unspecified :background unspecified :inherit ediff-even-diff-B))))
+   `(ediff-fine-diff-B
+     ((((class color) (min-colors 4096))
+       (:foreground "#bef7be" :background "#414f47" :weight bold))
+      (,class
+       (:foreground "#afffd7" :background "#4e4e4e" :weight bold))))
+   `(ediff-odd-diff-A ((,class (:background unspecified :inherit ediff-even-diff-A))))
+   `(ediff-odd-diff-B ((,class (:background unspecified :inherit ediff-even-diff-B))))
 
    `(emms-browser-album-face
         ((((class color) (min-colors 4096))
