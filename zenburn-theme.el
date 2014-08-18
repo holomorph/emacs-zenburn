@@ -468,6 +468,12 @@ office, go ahead :)")
    `(show-paren-mismatch ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
    `(show-paren-match ((,class (:foreground ,zenburn-match-paren-fg :background ,zenburn-match-paren-bg :weight bold))))
 
+   `(smerge-markers ((,class (:foreground ,zenburn-preproc :background unspecified :weight bold))))
+   `(smerge-mine ((,class (:background unspecified :inherit diff-removed))))
+   `(smerge-other ((,class (:background unspecified :inherit diff-added))))
+   `(smerge-refined-added ((,class (:background unspecified :inherit diff-refine-added))))
+   `(smerge-refined-removed ((,class (:background unspecified :inherit diff-refine-removed))))
+
    `(sp-show-pair-match-face ((,class (:foreground ,zenburn-match-paren-fg :background ,zenburn-match-paren-bg :weight bold))))
    `(sp-show-pair-mismatch-face ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
 
