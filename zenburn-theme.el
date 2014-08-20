@@ -449,8 +449,10 @@ office, go ahead :)")
 
    `(org-code ((,class (:foreground ,zenburn-keyword :weight bold))))
    `(org-date ((,class (:foreground ,zenburn-number))))
+   `(org-footnote ((,class (:foreground ,zenburn-constant :weight bold))))
    `(org-formula ((,class (:foreground ,zenburn-function))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
+   `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
    `(rst-adornment ((,class (:foreground ,zenburn-title :weight bold :inherit nil))))
    `(rst-definition ((,class (:inherit font-lock-preprocessor-face))))
