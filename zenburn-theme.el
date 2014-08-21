@@ -394,6 +394,7 @@ office, go ahead :)")
       (,class
        (:foreground "#87afaf" :weight bold :underline nil :inherit nil))))
    `(info-menu-star ((,class (:foreground ,zenburn-normal-fg))))
+   `(info-node ((,class (:foreground ,zenburn-title :weight bold :slant italic))))
    `(info-title-1 ((,class (:foreground ,zenburn-title :weight bold))))
    `(info-title-2 ((,class (:foreground ,zenburn-title :weight bold))))
    `(info-title-3 ((,class (:foreground ,zenburn-title :weight bold))))
