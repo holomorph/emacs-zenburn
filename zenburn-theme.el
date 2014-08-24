@@ -2,9 +2,8 @@
 
 ;; Copyright © 2013-2014 Mark Oteiza
 
-;; Author:      Mark Oteiza
-;; Created:     14 August 2013
-;; Keywords:    color themes
+;; Author: Mark Oteiza
+;; Created: 14 August 2013
 
 ;; This file is not part of GNU Emacs.
 
