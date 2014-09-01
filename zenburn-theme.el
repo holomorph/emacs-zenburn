@@ -546,6 +546,13 @@ office, go ahead :)")
    `(yas-field-highlight-face ((,class (:inherit highlight))))
 
   )
+
+  (custom-theme-set-variables
+   'zenburn
+
+   `(frame-background-mode 'dark)
+
+  )
   )
 
 (provide-theme 'zenburn)
