@@ -376,6 +376,34 @@ office, go ahead :)")
    `(gnus-summary-normal-unread ((,class (:foreground ,zenburn-title :weight bold))))
    `(gnus-summary-selected ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg :underline nil))))
 
+   `(helm-M-x-key ((,class (:foreground ,zenburn-number))))
+   `(helm-buffer-size ((,class (:foreground ,zenburn-storageClass))))
+   `(helm-buffer-process ((,class (:foreground ,zenburn-string))))
+   `(helm-candidate-number ((,class (:foreground unspecified :background unspecified))))
+   `(helm-ff-directory
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :weight bold))
+      (,class
+       (:foreground "#87afaf" :weight bold))))
+   `(helm-ff-executable ((,class (:foreground "#cbecd0" :weight bold))))
+   `(helm-ff-file ((,class (:inherit nil))))
+   `(helm-ff-prefix ((,class (:foreground ,zenburn-function :background nil))))
+   `(helm-ff-symlink
+     ((((class color) (min-colors 4096))
+       (:foreground "white" :weight bold))
+      (,class
+       (:foreground "color-231" :weight bold))))
+   `(helm-grep-finish ((,class (:foreground unspecified :background unspecified :inherit success)))) 
+   `(helm-lisp-show-completion ((,class (:background unspecified :inherit highlight))))
+   `(helm-match
+     ((((class color) (min-colors 4096))
+       (:foreground "white" :weight bold))
+      (,class
+       (:foreground "color-231" :weight bold))))
+   `(helm-selection ((,class (:background ,zenburn-search-bg))))
+   `(helm-selection-line ((,class (:background unspecified :underline unspecified :inherit highlight))))
+   `(helm-source-header ((,class (:foreground ,zenburn-title :background ,zenburn-modelinenc-bg :weight bold))))
+
    `(hl-line ((,class (:background ,zenburn-hl-line :inherit nil))))
 
    `(holiday ((,class (:background ,zenburn-number :foreground ,zenburn-hl-line))))
