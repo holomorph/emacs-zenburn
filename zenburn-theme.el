@@ -136,11 +136,7 @@ office, go ahead :)")
    `(highlight ((,class (:foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg))))
    `(header-line ((,class (:foreground ,zenburn-title :background nil :weight bold :underline nil :inherit nil))))
    `(isearch ((,class (:foreground ,zenburn-isearch-fg :background ,zenburn-isearch-bg))))
-   `(isearch-fail
-     ((((class color) (min-colors 4096))
-       (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))
-      (,class
-       (:foreground "color-231" :background ,zenburn-warning-bg :weight bold))))
+   `(isearch-fail ((,class (:background unspecified :inherit warning))))
    `(link ((,class (:foreground ,zenburn-specialkey :background ,zenburn-wildmenu-bg :underline t :weight normal))))
    `(link-visited ((,class (:foreground ,zenburn-constant :inherit link))))
    `(lazy-highlight ((,class (:foreground ,zenburn-search-fg :background ,zenburn-search-bg))))
@@ -187,11 +183,7 @@ office, go ahead :)")
    `(font-lock-string-face ((,class (:foreground ,zenburn-string))))
    `(font-lock-type-face ((,class (:foreground ,zenburn-type :weight bold))))
    `(font-lock-variable-name-face ((,class (:foreground ,zenburn-macro :weight bold))))
-   `(font-lock-warning-face
-     ((((class color) (min-colors 4096))
-       (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))
-      (,class
-       (:foreground "color-231" :background ,zenburn-warning-bg :weight bold))))
+   `(font-lock-warning-face ((,class (:inherit warning))))
 
    `(c-annotation-face ((,class (:foreground ,zenburn-constant :weight bold))))
 
