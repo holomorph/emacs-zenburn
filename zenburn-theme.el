@@ -518,6 +518,9 @@ office, go ahead :)")
 
    `(tooltip ((,class (:foreground ,zenburn-delimiter :background "#080808"))))
 
+   `(tuareg-font-lock-governing-face ((,class (:inherit bold))))
+   `(tuareg-font-lock-operator-face ((,class (:inherit font-lock-keyword-face))))
+
    `(whitespace-tab ((,class (:foreground ,zenburn-specialkey :background ,zenburn-normal-bg))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background ,zenburn-normal-bg))))
 
