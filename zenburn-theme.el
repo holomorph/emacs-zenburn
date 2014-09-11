@@ -206,18 +206,14 @@ office, go ahead :)")
    `(compilation-column-number ((,class (:foreground ,zenburn-number :weight normal))))
    `(compilation-error ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
    `(compilation-line-number ((,class (:foreground ,zenburn-number :weight normal))))
-   `(compilation-mode-line-exit ((,class (:foreground ,zenburn-specialkey :weight bold))))
-   `(compilation-mode-line-fail ((,class (:foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold))))
+   `(compilation-mode-line-exit ((,class (:foreground unspecified :inherit success))))
+   `(compilation-mode-line-fail ((,class (:foreground unspecified :inherit compilation-error))))
 
    `(completions-annotations ((,class (:foreground ,zenburn-comment))))
    `(completions-common-part ((,class (:foreground ,zenburn-pmenu-fg :background ,zenburn-pmenu-bg :weight bold))))
    `(completions-first-difference ((,class (:foreground ,zenburn-pmenusel-fg :background ,zenburn-pmenu-bg :weight bold))))
 
-   `(cua-rectangle
-     ((((class color) (min-colors 4096))
-       (:foreground ,zenburn-visual-fg :background ,zenburn-visual-bg))
-      (,class
-       (:foreground "#080808" :background ,zenburn-visual-bg))))
+   `(cua-rectangle ((,class (:foreground unspecified :background unspecified :inherit region))))
 
    `(custom-button ((,class (:foreground ,zenburn-label :background ,zenburn-warning-bg :weight bold :underline t))))
    `(custom-button-mouse ((,class (:inherit highlight))))
@@ -438,7 +434,7 @@ office, go ahead :)")
 
    `(makefile-space ((,class (:background ,zenburn-error-bg))))
 
-   `(markdown-bold-face ((,class (:inherit nil :weight bold))))
+   `(markdown-bold-face ((,class (:inherit bold))))
    `(markdown-header-delimiter-face ((,class (:inherit markdown-header-face))))
    `(markdown-header-face ((,class (:foreground ,zenburn-title :weight bold))))
    `(markdown-header-rule-face ((,class (:inherit markdown-header-face))))
@@ -475,9 +471,9 @@ office, go ahead :)")
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
    `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
-   `(rst-adornment ((,class (:foreground ,zenburn-title :weight bold :inherit nil))))
+   `(rst-adornment ((,class (:inherit rst-level-1))))
    `(rst-definition ((,class (:inherit font-lock-preprocessor-face))))
-   `(rst-level-1 ((,class (:foreground ,zenburn-title :background nil :weight bold))))
+   `(rst-level-1 ((,class (:background unspecified :inherit header-line))))
    `(rst-level-2 ((,class (:background unspecified :inherit rst-level-1))))
    `(rst-level-3 ((,class (:background unspecified :inherit rst-level-1))))
    `(rst-level-4 ((,class (:background unspecified :inherit rst-level-1))))
@@ -569,14 +565,14 @@ office, go ahead :)")
 
    `(yas-field-highlight-face ((,class (:inherit highlight))))
 
-  )
+   )
 
   (custom-theme-set-variables
    'zenburn
 
    `(frame-background-mode 'dark)
 
-  )
+   )
   )
 
 (provide-theme 'zenburn)
