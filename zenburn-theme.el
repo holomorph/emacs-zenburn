@@ -466,6 +466,7 @@ office, go ahead :)")
 
    `(org-code ((,class (:foreground ,zenburn-keyword :weight bold))))
    `(org-date ((,class (:foreground ,zenburn-number))))
+   `(org-document-title ((,class (:foreground unspecified :inherit header-line))))
    `(org-footnote ((,class (:foreground ,zenburn-constant :weight bold))))
    `(org-formula ((,class (:foreground ,zenburn-function))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
