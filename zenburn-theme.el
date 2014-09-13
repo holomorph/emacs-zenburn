@@ -210,8 +210,8 @@ office, go ahead :)")
    `(compilation-mode-line-fail ((,class (:foreground unspecified :inherit compilation-error))))
 
    `(completions-annotations ((,class (:foreground ,zenburn-comment))))
-   `(completions-common-part ((,class (:foreground ,zenburn-pmenu-fg :background ,zenburn-pmenu-bg :weight bold))))
-   `(completions-first-difference ((,class (:foreground ,zenburn-pmenusel-fg :background ,zenburn-pmenu-bg :weight bold))))
+   `(completions-common-part ((,class (:inherit menu :weight bold))))
+   `(completions-first-difference ((,class (:foreground ,zenburn-pmenusel-fg :inherit completions-common-part))))
 
    `(cua-rectangle ((,class (:foreground unspecified :background unspecified :inherit region))))
 
@@ -305,11 +305,10 @@ office, go ahead :)")
    `(emms-playlist-selected-face ((,class (:foreground ,zenburn-title :weight bold))))
    `(emms-playlist-track-face ((,class (:foreground ,zenburn-normal-fg))))
 
-   `(erc-action-face ((,class (:foreground ,zenburn-function :weight normal))))
-   `(erc-bold-face ((,class (:weight bold))))
-   `(erc-button ((,class (:foreground ,zenburn-specialkey :weight normal :underline t))))
+   `(erc-action-face ((,class (:inherit font-lock-function-name-face :weight normal))))
+   `(erc-button ((,class (:inherit link :weight normal))))
    `(erc-current-nick-face ((,class (:foreground ,zenburn-tag :weight bold))))
-   `(erc-dangerous-host-face ((,class (:foreground ,zenburn-warning-fg :background ,zenburn-warning-bg :weight bold))))
+   `(erc-dangerous-host-face ((,class (:foreground unspecified :inherit warning-bg))))
    `(erc-direct-msg-face ((,class (:foreground ,zenburn-keyword :weight bold))))
    `(erc-error-face ((,class (:foreground ,zenburn-errormsg :weight bold))))
    `(erc-fool-face ((,class (:foreground ,zenburn-nontext :weight bold))))
@@ -323,7 +322,6 @@ office, go ahead :)")
    `(erc-pal-face ((,class (:foreground ,zenburn-specialkey :weight bold))))
    `(erc-prompt-face ((,class (:foreground ,zenburn-number :background unspecified :weight normal))))
    `(erc-timestamp-face ((,class (:foreground ,zenburn-nontext :weight normal))))
-   `(erc-underline-face ((,class (:underline t))))
 
    `(eshell-ls-directory
      ((((class color) (min-colors 4096))
