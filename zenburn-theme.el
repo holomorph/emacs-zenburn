@@ -22,7 +22,7 @@
 
 ;;; Commentary:
 
-;; This is a port of the high contrast variant of `zenburn', the color
+;; This is a port of the high contrast mode of `zenburn', the color
 ;; scheme for Vim written by Jani Nurminen.  The Vim color scheme has
 ;; a homepage at <http://slinky.imukuppi.org/zenburnpage/>, and a
 ;; repository at <https://github.com/jnurmine/Zenburn>.
