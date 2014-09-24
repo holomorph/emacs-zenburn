@@ -464,6 +464,11 @@ office, go ahead :)")
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
    `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
+   `(rcirc-other-nick ((,class (:foreground ,zenburn-macro :weight bold))))
+   `(rcirc-server ((,class (:foreground ,zenburn-comment))))
+   `(rcirc-timestamp ((,class (:inherit shadow))))
+   `(rcirc-url ((,class (:weight unspecified :inherit link))))
+
    `(rst-adornment ((,class (:inherit rst-level-1))))
    `(rst-definition ((,class (:inherit font-lock-preprocessor-face))))
    `(rst-level-1 ((,class (:background unspecified :inherit header-line))))
