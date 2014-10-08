@@ -222,6 +222,16 @@ office, go ahead :)")
    `(custom-state ((,class (:foreground ,zenburn-macro :weight bold))))
    `(custom-variable-tag ((,class (:foreground nil :inherit header-line))))
 
+   `(debbugs-gnu-done ((,class (:foreground nil :inherit success))))
+   `(debbugs-gnu-handled ((,class (:foreground ,zenburn-comment))))
+   `(debbugs-gnu-new
+     ((((class color) (min-colors 4096))
+       (:foreground "white" :weight bold))
+      (,class
+       (:foreground "color-231" :weight bold))))
+   `(debbugs-gnu-stale ((,class (:foreground ,zenburn-delimiter))))
+   `(debbugs-gnu-tagged ((,class (:foreground ,zenburn-tag :weight bold))))
+
    `(dictionary-reference-face ((,class (:foreground nil :inherit link))))
    `(dictionary-word-entry-face
      ((((class color) (min-colors 4096))
