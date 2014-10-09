@@ -367,6 +367,12 @@ office, go ahead :)")
    `(gnus-summary-selected ((,class (:underline nil :inherit highlight))))
 
    `(helm-M-x-key ((,class (:foreground ,zenburn-number))))
+   `(helm-buffer-directory
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-directory :weight bold))
+      (,class
+       (:foreground "#87afaf" :weight bold))))
+   `(helm-buffer-file ((,class (:inherit font-lock-keyword-face))))
    `(helm-buffer-size ((,class (:foreground ,zenburn-storageClass))))
    `(helm-buffer-process ((,class (:foreground ,zenburn-string))))
    `(helm-candidate-number ((,class (:foreground unspecified :background unspecified))))
@@ -383,8 +389,11 @@ office, go ahead :)")
        (:foreground "white" :weight bold))
       (,class
        (:foreground "color-231" :weight bold))))
-   `(helm-grep-finish ((,class (:foreground unspecified :background unspecified :inherit success)))) 
+   `(helm-grep-finish ((,class (:foreground unspecified :background unspecified :inherit success))))
+   `(helm-grep-lineno ((,class (:foreground ,zenburn-number))))
+   `(helm-grep-match ((,class (:foreground unspecified :inherit match))))
    `(helm-lisp-show-completion ((,class (:background unspecified :inherit highlight))))
+   `(helm-locate-finish ((,class (:foreground unspecified :inherit success))))
    `(helm-match
      ((((class color) (min-colors 4096))
        (:foreground "white" :weight bold))
