@@ -528,6 +528,7 @@ office, go ahead :)")
    `(whitespace-tab ((,class (:foreground ,zenburn-specialkey :background unspecified))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background unspecified))))
 
+   `(widget-button-pressed ((,class (:foreground unspecified :inherit highlight :weight bold))))
    `(widget-documentation ((,class (:foreground ,zenburn-string))))
    `(widget-field ((,class (:foreground ,zenburn-isearch-bg :background ,zenburn-isearch-fg :weight normal))))
 
