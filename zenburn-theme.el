@@ -261,7 +261,7 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))
       (,class
-       (:foreground "#ffafaf" :background "#3a3a3a" :weight bold))))
+       (:foreground "#ffafaf" :background "#444444" :weight bold))))
 
    `(dired-directory
      ((((class color) (min-colors 4096))
