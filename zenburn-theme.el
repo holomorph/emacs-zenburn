@@ -348,8 +348,18 @@ office, go ahead :)")
       (,class
        (:foreground "#d7d7af"))))
 
-   `(flycheck-error ((,class (:inherit error))))
-   `(flycheck-warning ((,class (:inherit warning))))
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       :underline (:style wave :color ,zenburn-error-fg))
+      (,class (:inherit error))))
+   `(flycheck-info
+     ((((supports :underline (:style wave)))
+       :underline (:style wave :color ,zenburn-specialkey))
+      (,class (:inherit success))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       :underline (:style wave :color ,zenburn-warning-fg))
+      (,class (:inherit warning))))
 
    `(font-latex-bold-face ((,class (:foreground unspecified :inherit bold))))
    `(font-latex-italic-face ((,class (:foreground unspecified :inherit italic))))
