@@ -151,7 +151,7 @@ office, go ahead :)")
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-visual-fg :background ,zenburn-visual-bg))
       (,class
-       (:foreground "#080808" :background ,zenburn-visual-bg))))
+       (:foreground "color-16" :background ,zenburn-visual-bg))))
    `(secondary-selection
      ((((class color) (min-colors 4096))
        (:background "#0f0f0f"))
