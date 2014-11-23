@@ -554,6 +554,8 @@ office, go ahead :)")
    `(tuareg-font-lock-governing-face ((,class (:inherit bold))))
    `(tuareg-font-lock-operator-face ((,class (:inherit font-lock-keyword-face))))
 
+   `(vc-state-base-face ((,class (:foreground ,zenburn-specialkey :background unspecified))))
+
    `(whitespace-tab ((,class (:foreground ,zenburn-specialkey :background unspecified))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background unspecified))))
 
