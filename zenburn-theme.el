@@ -371,6 +371,8 @@ office, go ahead :)")
    `(font-latex-verbatim-face ((,class (:foreground unspecified :inherit tex-verbatim-face))))
    `(font-latex-warning-face ((,class (:foreground unspecified :inherit warning))))
 
+   `(gnus-cite-1 ((,class (:foreground ,zenburn-comment))))
+   `(gnus-cite-2 ((,class (:foreground ,zenburn-macro :weight bold))))
    `(gnus-header-content ((,class (:foreground ,zenburn-specialkey))))
    `(gnus-header-from ((,class (:foreground ,zenburn-string :weight normal))))
    `(gnus-header-name ((,class (:foreground ,zenburn-preproc :weight bold))))
