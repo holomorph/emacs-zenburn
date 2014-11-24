@@ -159,6 +159,7 @@ office, go ahead :)")
        (:background "#080808"))))
    `(shadow ((,class (:foreground ,zenburn-nontext))))
    `(success ((,class (:foreground ,zenburn-specialkey :weight bold))))
+   `(trailing-whitespace ((,class (:background ,zenburn-warning-bg))))
    `(vertical-border ((,class (:foreground ,zenburn-vertsplit-fg :background ,zenburn-vertsplit-bg))))
    `(warning
      ((((class color) (min-colors 4096))
