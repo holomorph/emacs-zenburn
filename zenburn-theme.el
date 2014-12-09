@@ -493,6 +493,9 @@ office, go ahead :)")
    `(mu4e-view-header-value-face ((,class (:foreground ,zenburn-specialkey))))
    `(mu4e-view-special-header-value-face ((,class (:foreground ,zenburn-function))))
 
+   `(newsticker-treeview-face ((,class (:foreground unspecified))))
+   `(newsticker-treeview-selection-face ((,class (:background unspecified :weight bold :inherit menu))))
+
    `(notmuch-crypto-part-header ((,class (:foreground ,zenburn-folded :background "#121212"))))
    `(notmuch-crypto-signature-bad ((,class (:foreground nil :background nil :inherit error))))
    `(notmuch-crypto-signature-good ((,class (:foreground ,zenburn-specialkey :background "#333333" :weight bold))))
