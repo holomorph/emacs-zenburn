@@ -349,6 +349,10 @@ office, go ahead :)")
       (,class
        (:foreground "#d7d7af"))))
 
+   `(eww-form-text ((,class (:foreground nil :background nil :inherit widget-field))))
+   `(eww-invalid-certificate ((,class (:foreground unspecified :weight bold :inherit error))))
+   `(eww-valid-certificate ((,class (:foreground ,zenburn-wildmenu-fg :weight bold))))
+
    `(flycheck-error
      ((((supports :underline (:style wave)))
        :underline (:style wave :color ,zenburn-error-fg))
