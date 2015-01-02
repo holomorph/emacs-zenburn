@@ -514,6 +514,9 @@ office, go ahead :)")
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
    `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,zenburn-delimiter))))
+   `(rainbow-delimiters-unmatched-face ((,class (:foreground nil :inherit error))))
+
    `(rcirc-other-nick ((,class (:foreground ,zenburn-macro :weight bold))))
    `(rcirc-server ((,class (:foreground ,zenburn-comment))))
    `(rcirc-timestamp ((,class (:inherit shadow))))
