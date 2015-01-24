@@ -566,6 +566,7 @@ office, go ahead :)")
    `(tooltip ((,class (:foreground ,zenburn-delimiter :background "#080808"))))
 
    `(tuareg-font-lock-governing-face ((,class (:inherit bold))))
+   `(tuareg-font-lock-module-face ((,class (:foreground ,zenburn-precondit :weight bold))))
    `(tuareg-font-lock-operator-face ((,class (:inherit font-lock-keyword-face))))
 
    `(vc-state-base-face ((,class (:foreground ,zenburn-specialkey :background unspecified))))
