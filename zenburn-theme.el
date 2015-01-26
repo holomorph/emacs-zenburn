@@ -376,6 +376,8 @@ office, go ahead :)")
    `(font-latex-verbatim-face ((,class (:foreground unspecified :inherit tex-verbatim-face))))
    `(font-latex-warning-face ((,class (:foreground unspecified :inherit warning))))
 
+   `(geiser-font-lock-autodoc-identifier ((,class (:foreground unspecified :inherit font-lock-function-name-face))))
+
    `(gnus-cite-1 ((,class (:foreground ,zenburn-comment))))
    `(gnus-cite-2 ((,class (:foreground ,zenburn-macro :weight bold))))
    `(gnus-header-content ((,class (:foreground ,zenburn-specialkey))))
@@ -565,12 +567,14 @@ office, go ahead :)")
 
    `(tooltip ((,class (:foreground ,zenburn-delimiter :background "#080808"))))
 
+   `(tuareg-font-lock-constructor-face ((,class (:inherit font-lock-constant-face))))
    `(tuareg-font-lock-governing-face ((,class (:inherit bold))))
    `(tuareg-font-lock-module-face ((,class (:foreground ,zenburn-precondit :weight bold))))
    `(tuareg-font-lock-operator-face ((,class (:inherit font-lock-keyword-face))))
 
    `(vc-state-base-face ((,class (:foreground ,zenburn-specialkey :background unspecified))))
 
+   `(whitespace-newline ((,class (:foreground unspecified :inherit shadow))))
    `(whitespace-tab ((,class (:foreground ,zenburn-specialkey :background unspecified))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background unspecified))))
 
