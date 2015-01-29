@@ -4,6 +4,8 @@
 
 ;; Author: Mark Oteiza
 ;; Created: 14 August 2013
+;; Version: 1.0
+;; Keywords: faces
 
 ;; This file is not part of GNU Emacs.
 
@@ -380,6 +382,8 @@ office, go ahead :)")
 
    `(gnus-cite-1 ((,class (:foreground ,zenburn-comment))))
    `(gnus-cite-2 ((,class (:foreground ,zenburn-macro :weight bold))))
+   `(gnus-cite-3 ((,class (:foreground unspecified :inherit gnus-cite-1))))
+   `(gnus-cite-4 ((,class (:foreground unspecified :inherit gnus-cite-2))))
    `(gnus-header-content ((,class (:foreground ,zenburn-specialkey))))
    `(gnus-header-from ((,class (:foreground ,zenburn-string :weight normal))))
    `(gnus-header-name ((,class (:foreground ,zenburn-preproc :weight bold))))
@@ -622,18 +626,17 @@ office, go ahead :)")
    `(wl-highlight-summary-unread-face ((,class (:foreground ,zenburn-title :weight bold))))
    `(wl-message-header-narrowing-face ((,class (:foreground ,zenburn-difftext-fg :background ,zenburn-difftext-bg :weight bold))))
 
-   `(yas-field-highlight-face ((,class (:inherit highlight))))
-
-   )
+   `(yas-field-highlight-face ((,class (:inherit highlight)))))
 
   (custom-theme-set-variables
    'zenburn
 
-   `(frame-background-mode 'dark)
-
-   )
-  )
+   `(frame-background-mode 'dark)))
 
 (provide-theme 'zenburn)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
 
 ;;; zenburn-theme.el ends here
