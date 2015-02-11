@@ -192,6 +192,7 @@ office, go ahead :)")
 
    `(company-preview ((,class (:foreground nil :background nil :inherit highlight))))
    `(company-preview-common ((,class (:foreground unspecified :inherit company-preview))))
+   `(company-preview-search ((,class (:background unspecified :inherit company-tooltip-search))))
    `(company-scrollbar-bg ((,class (:background ,zenburn-wildmenu-bg))))
    `(company-scrollbar-fg ((,class (:background ,zenburn-wildmenu-fg))))
    `(company-template-field ((,class (:foreground nil :background nil :inherit highlight))))
