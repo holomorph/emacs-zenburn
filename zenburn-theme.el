@@ -381,6 +381,9 @@ office, go ahead :)")
 
    `(geiser-font-lock-autodoc-identifier ((,class (:foreground unspecified :inherit font-lock-function-name-face))))
 
+   `(gnu-apl-error ((,class (:foreground ,zenburn-errormsg :background "#2f2f2f" :weight bold))))
+   `(gnu-apl-user-status-text ((,class (:foreground unspecified :inherit gnu-apl-error))))
+
    `(gnus-cite-1 ((,class (:foreground ,zenburn-comment))))
    `(gnus-cite-2 ((,class (:foreground ,zenburn-macro :weight bold))))
    `(gnus-cite-3 ((,class (:foreground unspecified :inherit gnus-cite-1))))
