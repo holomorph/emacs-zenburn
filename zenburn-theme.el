@@ -464,6 +464,21 @@ office, go ahead :)")
    `(info-title-3 ((,class (:foreground unspecified :height 1.2 :inherit info-title-4))))
    `(info-title-4 ((,class (:foreground ,zenburn-title :weight bold))))
 
+   `(js2-error
+     ((((supports :underline (:style wave)))
+       :underline (:style wave :color ,zenburn-error-fg))
+      (,class (:inherit error))))
+   `(js2-function-param ((,class (:foreground nil :inherit font-lock-variable-name-face))))
+   `(js2-jsdoc-html-tag-delimiter ((,class (nil))))
+   `(js2-jsdoc-html-tag-name ((,class (:foreground nil :inherit font-lock-function-name-face))))
+   `(js2-jsdoc-tag ((,class (:foreground ,zenburn-tag :weight bold))))
+   `(js2-jsdoc-type ((,class (:foreground nil :inherit font-lock-type-face))))
+   `(js2-jsdoc-value ((,class (:foreground nil :inherit js2-function-param))))
+   `(js2-warning
+     ((((supports :underline (:style wave)))
+       :underline (:style wave :color ,zenburn-warning-fg))
+      (,class (:inherit warning))))
+
    `(ledger-font-comment-face ((,class (:foreground nil :inherit font-lock-comment-face))))
    `(ledger-font-other-face ((,class (:foreground ,zenburn-function :weight normal))))
    `(ledger-font-payee-uncleared-face ((,class (:foreground ,zenburn-constant :weight bold))))
