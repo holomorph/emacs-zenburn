@@ -513,6 +513,9 @@ office, go ahead :)")
    `(notmuch-crypto-signature-good ((,class (:foreground ,zenburn-specialkey :background "#333333" :weight bold))))
    `(notmuch-tag-face ((,class (:foreground ,zenburn-specialkey))))
 
+   `(num3-face-even ((,class (:foreground ,zenburn-number :background nil :weight normal :underline t))))
+   `(num3-face-odd ((,class (:underline nil :inherit num3-face-even))))
+
    `(org-code ((,class (:foreground ,zenburn-keyword :weight bold))))
    `(org-date ((,class (:foreground ,zenburn-number))))
    `(org-document-title ((,class (:foreground unspecified :inherit header-line))))
