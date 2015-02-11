@@ -518,6 +518,7 @@ office, go ahead :)")
    `(org-document-title ((,class (:foreground unspecified :inherit header-line))))
    `(org-footnote ((,class (:foreground ,zenburn-constant :weight bold))))
    `(org-formula ((,class (:foreground ,zenburn-function))))
+   `(org-macro ((,class (:foreground ,zenburn-precondit :weight bold))))
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
    `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
