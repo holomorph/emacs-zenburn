@@ -352,6 +352,7 @@ office, go ahead :)")
        (:foreground ,zenburn-exception))
       (,class
        (:foreground "#d7d7af"))))
+   `(eshell-prompt ((,class (:foreground ,zenburn-debug :weight bold))))
 
    `(eww-form-text ((,class (:foreground nil :background nil :inherit widget-field))))
    `(eww-invalid-certificate ((,class (:foreground unspecified :weight bold :inherit error))))
