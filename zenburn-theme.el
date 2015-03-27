@@ -406,7 +406,7 @@ office, go ahead :)")
    `(gnus-summary-normal-unread ((,class (:foreground ,zenburn-title :weight bold))))
    `(gnus-summary-selected ((,class (:underline nil :inherit highlight))))
 
-   `(helm-M-x-key ((,class (:foreground ,zenburn-number))))
+   `(helm-M-x-key ((,class (:foreground ,zenburn-number :family "courier"))))
    `(helm-buffer-directory
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-directory :weight bold))
@@ -414,24 +414,27 @@ office, go ahead :)")
        (:foreground "#87afaf" :weight bold))))
    `(helm-buffer-file ((,class (:inherit font-lock-keyword-face))))
    `(helm-buffer-size ((,class (:foreground ,zenburn-storageClass))))
-   `(helm-buffer-process ((,class (:foreground ,zenburn-string))))
-   `(helm-candidate-number ((,class (:foreground unspecified :background unspecified))))
+   `(helm-buffer-process ((,class (nil))))
+   `(helm-candidate-number ((,class (nil))))
    `(helm-ff-directory
      ((((class color) (min-colors 4096))
        (:foreground ,zenburn-directory :weight bold))
       (,class
        (:foreground "#87afaf" :weight bold))))
+   `(helm-ff-dotted-directory ((,class (:foreground nil :background nil :inherit helm-ff-directory))))
    `(helm-ff-executable ((,class (:foreground "#cbecd0" :weight bold))))
    `(helm-ff-file ((,class (:inherit nil))))
-   `(helm-ff-prefix ((,class (:foreground ,zenburn-function :background nil))))
+   `(helm-ff-prefix ((,class (:foreground nil :background nil :inherit highlight))))
    `(helm-ff-symlink
      ((((class color) (min-colors 4096))
        (:foreground "white" :weight bold))
       (,class
        (:foreground "color-231" :weight bold))))
+   `(helm-grep-file ((,class (:foreground unspecified :inherit success))))
    `(helm-grep-finish ((,class (:foreground unspecified :background unspecified :inherit success))))
    `(helm-grep-lineno ((,class (:foreground ,zenburn-number))))
    `(helm-grep-match ((,class (:foreground unspecified :inherit match))))
+   `(helm-lisp-completion-info ((,class (nil))))
    `(helm-lisp-show-completion ((,class (:background unspecified :inherit highlight))))
    `(helm-locate-finish ((,class (:foreground unspecified :inherit success))))
    `(helm-match
@@ -439,9 +442,9 @@ office, go ahead :)")
        (:foreground "white" :weight bold))
       (,class
        (:foreground "color-231" :weight bold))))
+   `(helm-prefarg ((,class (:foreground ,zenburn-number))))
    `(helm-selection ((,class (:background ,zenburn-search-bg))))
-   `(helm-selection-line ((,class (:background unspecified :underline unspecified :inherit highlight))))
-   `(helm-source-header ((,class (:foreground ,zenburn-title :background ,zenburn-modelinenc-bg :weight bold))))
+   `(helm-source-header ((,class (:foreground ,zenburn-title :background ,zenburn-modelinenc-bg :height 1.3 :weight bold))))
 
    `(hl-line ((,class (:background ,zenburn-hl-line :inherit nil))))
 
