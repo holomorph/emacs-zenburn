@@ -489,7 +489,11 @@ office, go ahead :)")
    `(ledger-font-posting-account-face ((,class (:foreground ,zenburn-preproc :weight bold))))
    `(ledger-font-posting-amount-face ((,class (:foreground ,zenburn-number))))
 
-   `(linum ((,class (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))))
+   `(linum
+     ((((class color) (min-colors 4096))
+       (:foreground ,zenburn-linum-fg :background ,zenburn-linum-bg :weight normal))
+      (,class
+       (:foreground "#a8a8a8" :background "#121212" :weight normal))))
 
    `(magit-diff-added ((,class (:foreground unspecified :background unspecified :inherit diff-added))))
    `(magit-diff-context ((,class (:foreground unspecified :inherit diff-context))))
