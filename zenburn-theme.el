@@ -184,6 +184,8 @@ office, go ahead :)")
    `(font-lock-variable-name-face ((,class (:foreground ,zenburn-macro :weight bold))))
    `(font-lock-warning-face ((,class (:inherit warning))))
 
+   `(apropos-keybinding ((,class (:family "courier" :inherit underline))))
+
    `(c-annotation-face ((,class (:foreground ,zenburn-constant :weight bold))))
 
    `(change-log-date ((,class (:foreground ,zenburn-number))))
