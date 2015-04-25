@@ -356,6 +356,9 @@ office, go ahead :)")
        (:foreground "#d7d7af"))))
    `(eshell-prompt ((,class (:foreground ,zenburn-debug :weight bold))))
 
+   `(evil-ex-info ((,class (:foreground nil :inherit warning))))
+   `(evil-ex-substitute-replacement ((,class (:foreground nil :inherit highlight))))
+
    `(eww-form-text ((,class (:foreground nil :background nil :inherit widget-field))))
    `(eww-invalid-certificate ((,class (:foreground unspecified :weight bold :inherit error))))
    `(eww-valid-certificate ((,class (:foreground ,zenburn-wildmenu-fg :weight bold))))
