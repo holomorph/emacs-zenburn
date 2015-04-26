@@ -4,7 +4,7 @@
 
 ;; Author: Mark Oteiza
 ;; Created: 14 August 2013
-;; Version: 1.0
+;; Version: 1.1
 ;; Keywords: faces
 
 ;; This file is not part of GNU Emacs.
