@@ -564,6 +564,8 @@ office, go ahead :)")
    `(org-table ((,class (:foreground ,zenburn-specialkey))))
    `(org-verbatim ((,class (:inherit font-lock-preprocessor-face))))
 
+   `(pulse-highlight-start-face ((,class (:background nil :inherit highlight))))
+
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,zenburn-delimiter))))
    `(rainbow-delimiters-unmatched-face ((,class (:foreground nil :inherit error))))
 
@@ -676,7 +678,8 @@ office, go ahead :)")
   (custom-theme-set-variables
    'zenburn
 
-   `(frame-background-mode 'dark)))
+   '(pulse-flag nil)
+   '(frame-background-mode 'dark)))
 
 (provide-theme 'zenburn)
 
