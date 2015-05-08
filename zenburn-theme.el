@@ -622,6 +622,7 @@ office, go ahead :)")
 
    `(vc-state-base-face ((,class (:foreground ,zenburn-specialkey :background unspecified))))
 
+   `(whitespace-indentation ((,class (:foreground ,zenburn-specialkey :background "#242424"))))
    `(whitespace-newline ((,class (:foreground unspecified :inherit shadow))))
    `(whitespace-tab ((,class (:foreground ,zenburn-specialkey :background unspecified))))
    `(whitespace-trailing ((,class (:foreground ,zenburn-specialkey :background unspecified))))
