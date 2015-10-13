@@ -387,6 +387,7 @@ office, go ahead :)")
    `(font-latex-verbatim-face ((,class :foreground unspecified :inherit tex-verbatim-face)))
    `(font-latex-warning-face ((,class :foreground unspecified :inherit warning)))
 
+   `(geiser-font-lock-autodoc-current-arg ((,class :foreground unspecified :inherit bold)))
    `(geiser-font-lock-autodoc-identifier ((,class :foreground unspecified :inherit font-lock-function-name-face)))
 
    `(gnu-apl-error ((,class :foreground ,zenburn-errormsg :background "#2f2f2f" :weight bold)))
