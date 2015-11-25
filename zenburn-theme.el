@@ -586,6 +586,13 @@ office, go ahead :)")
    `(rst-level-5 ((,class :background unspecified :inherit rst-level-1)))
    `(rst-level-6 ((,class :background unspecified :inherit rst-level-1)))
 
+   `(ruler-mode-default ((,class :foreground ,zenburn-nontext :background "#121212" :inherit default)))
+   `(ruler-mode-column-number ((,class :foreground ,zenburn-delimiter :inherit ruler-mode-default)))
+   `(ruler-mode-fill-column ((,class :foreground ,zenburn-modeline-fg :inherit ruler-mode-default)))
+   `(ruler-mode-comment-column ((,class :foreground ,zenburn-modeline-fg :inherit ruler-mode-default)))
+   `(ruler-mode-goal-column ((,class :foreground ,zenburn-modeline-fg :inherit ruler-mode-default)))
+   `(ruler-mode-current-column ((,class :foreground ,zenburn-wildmenu-fg :weight bold :inherit ruler-mode-default)))
+
    `(sh-escaped-newline ((,class :foreground ,zenburn-statement)))
    `(sh-heredoc ((,class :foreground ,zenburn-string)))
    `(sh-quoted-exec ((,class :foreground "#d7afaf")))
