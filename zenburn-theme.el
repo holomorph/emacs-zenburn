@@ -660,6 +660,8 @@ office, go ahead :)")
    `(w3m-tab-unselected-retrieving ((,class :foreground ,zenburn-directory :background nil)))
    `(w3m-tab-unselected-unseen ((,class :foreground nil :background nil :inherit highlight)))
 
+   `(which-func ((,class :foreground unspecified :inherit font-lock-function-name-face)))
+
    `(wl-highlight-demo-face ((,class :foreground ,zenburn-normal-fg)))
    `(wl-highlight-folder-unknown-face ((,class :foreground ,zenburn-errormsg :weight bold)))
    `(wl-highlight-folder-unread-face ((,class :foreground ,zenburn-title :weight bold)))
