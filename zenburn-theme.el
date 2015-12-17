@@ -509,6 +509,8 @@ office, go ahead :)")
       (,class
        :foreground "#a8a8a8" :background "#121212" :weight normal)))
 
+   `(macrostep-macro-face ((,class (:inherit font-lock-keyword-face :underline t))))
+
    `(magit-diff-added ((,class :foreground unspecified :background unspecified :inherit diff-added)))
    `(magit-diff-context ((,class :foreground unspecified :inherit diff-context)))
    `(magit-diff-hunk-heading ((,class :foreground ,zenburn-define :background nil :weight bold)))
