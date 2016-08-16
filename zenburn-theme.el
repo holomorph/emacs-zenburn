@@ -634,7 +634,7 @@ office, go ahead :)")
    `(tuareg-font-lock-module-face ((,class :foreground ,zenburn-precondit :weight bold)))
    `(tuareg-font-lock-operator-face ((,class :inherit font-lock-keyword-face)))
 
-   `(vc-state-base-face ((,class :foreground ,zenburn-specialkey :background unspecified)))
+   `(vc-state-base ((,class :foreground ,zenburn-specialkey :background unspecified)))
 
    `(whitespace-indentation ((,class :foreground ,zenburn-specialkey :background "#242424")))
    `(whitespace-newline ((,class :foreground unspecified :inherit shadow)))
