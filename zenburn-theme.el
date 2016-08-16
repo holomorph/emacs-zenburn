@@ -511,14 +511,19 @@ office, go ahead :)")
 
    `(macrostep-macro-face ((,class (:inherit font-lock-keyword-face :underline t))))
 
+   `(magit-blame-date ((,class :foreground ,zenburn-number :inherit magit-blame-heading)))
+   `(magit-blame-hash ((,class :foreground ,zenburn-constant :inherit magit-blame-heading)))
+   `(magit-blame-heading ((,class :foreground ,zenburn-nontext :background "#121212")))
    `(magit-diff-added ((,class :foreground unspecified :background unspecified :inherit diff-added)))
    `(magit-diff-context ((,class :foreground unspecified :inherit diff-context)))
    `(magit-diff-hunk-heading ((,class :foreground ,zenburn-define :background nil :weight bold)))
+   `(magit-diff-hunk-heading-highlight ((,class :foreground unspecified :inherit (magit-diff-hunk-heading magit-section-highlight))))
    `(magit-diff-removed ((,class :foreground unspecified :background unspecified :inherit diff-removed)))
    `(magit-diffstat-added ((,class :foreground "#bef7be" :weight bold)))
    `(magit-diffstat-removed ((,class :foreground ,zenburn-difftext-fg :weight bold)))
    `(magit-log-author ((,class :foreground unspecified)))
    `(magit-section-heading ((,class :foreground ,zenburn-title :background unspecified :weight bold)))
+   `(magit-section-highlight ((,class :background ,zenburn-warning-bg)))
 
    `(makefile-space ((,class :background ,zenburn-error-bg)))
 
