@@ -1,8 +1,8 @@
 ;;; zenburn-theme.el --- Zenburn theme for faces
 
-;; Copyright © 2013-2016 Mark Oteiza
+;; Copyright © 2013-2017  Mark Oteiza <mvoteiza@udel.edu>
 
-;; Author: Mark Oteiza
+;; Author: Mark Oteiza <mvoteiza@udel.edu>
 ;; Created: 14 August 2013
 ;; Version: 1.1
 ;; Keywords: faces
