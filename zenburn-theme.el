@@ -516,6 +516,13 @@ office, go ahead :)")
        :foreground "#a8a8a8" :background "#121212" :weight normal)))
 
    `(macrostep-macro-face ((,class (:inherit font-lock-keyword-face :underline t))))
+   ;; `macrostep' lacks face specs for dark backgrounds and only
+   ;; specifies faces for graphical emacs and 8-color terms
+   `(macrostep-gensym-1 ((,class (:foreground "#cbecd0" :weight bold :box t))))
+   `(macrostep-gensym-2 ((,class (:foreground "#8cd0d3" :weight bold :box t))))
+   `(macrostep-gensym-3 ((,class (:foreground "#efef8f" :weight bold :box t))))
+   `(macrostep-gensym-4 ((,class (:foreground "#f18c96" :weight bold :box t))))
+   `(macrostep-gensym-5 ((,class (:foreground "magenta" :weight bold :box t))))
 
    `(magit-blame-date ((,class :foreground ,zenburn-number :inherit magit-blame-heading)))
    `(magit-blame-hash ((,class :foreground ,zenburn-constant :inherit magit-blame-heading)))
