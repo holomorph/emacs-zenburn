@@ -129,7 +129,11 @@ office, go ahead :)")
    `(cursor ((,class :foreground ,zenburn-cursor-fg :background ,zenburn-cursor-bg)))
    `(default ((,class :foreground ,zenburn-normal-fg :background ,zenburn-normal-bg)))
    `(escape-glyph ((,class :foreground ,zenburn-specialkey)))
-   `(error ((,class :foreground ,zenburn-error-fg :background ,zenburn-error-bg :weight bold)))
+   '(error
+     ((((class color) (min-colors 4096))
+       :foreground "#e37170" :background "#3d3535" :weight ultra-bold)
+      (((class color) (min-colors 256))
+       :foreground "color-167" :background "color-236" :bold t)))
    `(fringe ((,class :foreground "#606060" :background ,zenburn-modelinenc-bg)))
    `(highlight ((,class :foreground ,zenburn-wildmenu-bg :background ,zenburn-wildmenu-fg)))
    `(header-line ((,class :foreground ,zenburn-title :background nil :weight bold :underline nil :inherit nil)))
@@ -313,7 +317,7 @@ office, go ahead :)")
    `(ediff-odd-diff-B ((,class :background unspecified :inherit ediff-even-diff-B)))
 
    `(emms-browser-album-face
-        ((((class color) (min-colors 4096))
+     ((((class color) (min-colors 4096))
        :foreground ,zenburn-directory :weight bold)
       (,class
        :foreground "#87afaf" :weight bold)))
@@ -710,7 +714,6 @@ office, go ahead :)")
   (custom-theme-set-variables
    'zenburn
 
-   '(pulse-flag nil)
    '(frame-background-mode 'dark)))
 
 (provide-theme 'zenburn)
