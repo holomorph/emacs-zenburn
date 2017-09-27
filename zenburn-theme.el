@@ -158,6 +158,7 @@ office, go ahead :)")
       (,class
        :foreground ,zenburn-modelinenc-fg :background "#262626" :weight normal :box nil)))
    `(next-error ((,class :inherit highlight)))
+   `(nobreak-hyphen ((,class :inherit nobreak-space)))
    `(region
      ((((class color) (min-colors 4096))
        :foreground ,zenburn-visual-fg :background ,zenburn-visual-bg)
@@ -239,22 +240,20 @@ office, go ahead :)")
    `(custom-state ((,class :foreground ,zenburn-macro :weight bold)))
    `(custom-variable-tag ((,class :foreground nil :inherit header-line)))
 
+   `(debbugs-gnu-archived ((,class :foreground ,zenburn-specialkey :weight bold :inverse-video t)))
    `(debbugs-gnu-done ((,class :foreground nil :inherit success)))
    `(debbugs-gnu-handled ((,class :foreground ,zenburn-comment)))
-   `(debbugs-gnu-new
-     ((((class color) (min-colors 4096))
-       :foreground "white" :weight bold)
-      (,class
-       :foreground "color-231" :weight bold)))
+   '(debbugs-gnu-new
+     ((((class color) (min-colors 4096)) :foreground "white" :weight bold)
+      (((class color) (min-colors 256)) :foreground "color-231" :weight bold)))
+   `(debbugs-gnu-pending ((,class :foreground ,zenburn-nontext)))
    `(debbugs-gnu-stale ((,class :foreground ,zenburn-delimiter)))
    `(debbugs-gnu-tagged ((,class :foreground ,zenburn-tag :weight bold)))
 
    `(dictionary-reference-face ((,class :foreground nil :inherit link)))
-   `(dictionary-word-entry-face
-     ((((class color) (min-colors 4096))
-       :foreground ,zenburn-directory :weight bold)
-      (,class
-       :foreground "#87afaf" :weight bold)))
+   '(dictionary-word-entry-face
+     ((((class color) (min-colors 4096)) :foreground "#9fafaf" :weight bold)
+      (((class color) (min-colors 256)) :foreground "#87afaf" :weight bold)))
 
    `(diff-added
      ((((class color) (min-colors 4096))
