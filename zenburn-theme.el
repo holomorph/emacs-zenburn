@@ -665,6 +665,7 @@ office, go ahead :)")
 
    `(whitespace-indentation ((,class :foreground ,zenburn-specialkey :background "#242424")))
    `(whitespace-newline ((,class :foreground unspecified :inherit shadow)))
+   `(whitespace-space ((,class :foreground ,zenburn-nontext :background unspecified)))
    `(whitespace-tab ((,class :foreground ,zenburn-specialkey :background unspecified)))
    `(whitespace-trailing ((,class :foreground ,zenburn-specialkey :background unspecified)))
 
