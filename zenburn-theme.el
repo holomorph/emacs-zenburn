@@ -315,6 +315,10 @@ office, go ahead :)")
    `(ediff-odd-diff-A ((,class :background unspecified :inherit ediff-even-diff-A)))
    `(ediff-odd-diff-B ((,class :background unspecified :inherit ediff-even-diff-B)))
 
+   `(elfeed-search-date-face ((,class :foreground ,zenburn-number)))
+   `(elfeed-search-filter-face ((,class :inherit font-lock-keyword-face)))
+   `(elfeed-search-tag-face ((,class :foreground ,zenburn-tag :weight bold)))
+
    `(emms-browser-album-face
      ((((class color) (min-colors 4096))
        :foreground ,zenburn-directory :weight bold)
