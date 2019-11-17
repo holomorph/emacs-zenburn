@@ -263,6 +263,8 @@ office, go ahead :)")
    `(diff-context ((,class :foreground unspecified :inherit shadow)))
    `(diff-file-header ((,class :foreground ,zenburn-type :background nil :weight bold)))
    `(diff-header ((,class :foreground ,zenburn-define :background nil :weight bold)))
+   `(diff-indicator-added ((,class :inherit diff-added)))
+   `(diff-indicator-removed ((,class :inherit diff-removed)))
    `(diff-removed
      ((((class color) (min-colors 4096))
        :foreground ,zenburn-diffempty-fg :background ,zenburn-diffempty-bg :weight bold)
